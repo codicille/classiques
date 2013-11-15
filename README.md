@@ -2,7 +2,14 @@
 
 > Classiques de la litérature québecoise
 
-Plus de détails à venir.
+## Guide de démarrage
+
+Ce site web a été conçu afin d'être simple à mettre à jour et modifier par tout
+développeur web. Vous avez besoin de PHP 5.4+ pour partir simplement un site web
+de développement. Pour la mise en ligne, celle-ci se fait automatiquement quand
+des modifications sont apportées à ce dépôt github.
+
+    php -S localhost:8000
 
 ## Mise en ligne
 
