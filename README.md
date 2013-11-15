@@ -25,10 +25,14 @@ Pour débuter l'observation et la compilation en temps réel des feuilles de sty
 
 ## Mise en ligne
 
+Prérequis : https://toolbelt.heroku.com
+
 Configuration :
 
     git remote add staging git@heroku.com:classiques-staging.git
+    heroku config:push --remote staging
     git remote add production git@heroku.com:classiques.git
+    heroku config:push --remote staging
 
 Mise en ligne :
 
