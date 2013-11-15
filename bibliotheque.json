@@ -1,0 +1,12 @@
+{
+  "oeuvres": {
+    "maria-chapdelaine": {
+      "titre": "Maria Chapdelaine",
+      "auteur": "Louis Hémon"
+    },
+    "moeurs-des-sauvages-americains": {
+      "titre": "Moeurs des sauvages américains",
+      "auteur": "Joseph Lafiteau"
+    }
+  }
+}

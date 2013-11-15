@@ -1,3 +1,7 @@
+<?php
+$bibliotheque = json_decode(file_get_contents('bibliotheque.json'));
+$oeuvre_param = isset($_GET['oeuvre']) ? $_GET['oeuvre'] : null;
+?>
 <!DOCTYPE html>
   <html>
   <head>
@@ -23,20 +27,20 @@
     </div>
 
     <div class="main">
+      <?php if(isset($oeuvre_param)): ?>
+        <?php require "oeuvres/$oeuvre_param.html" ?>
+      <?php else: ?>
       <ul class="classy-list">
+        <?php foreach($bibliotheque->oeuvres as $tag => $oeuvre): ?>
         <li>
-          <a href="#" class="classy-list-item">
-            <span class="classy-list-title">Moeurs des sauvages américains</span>
-            <span class="classy-list-desc">Joseph Lafiteau</span>
+          <a href="?oeuvre=<?php echo $tag ?>" class="classy-list-item">
+            <span class="classy-list-title"><?php echo $oeuvre->titre; ?></span>
+            <span class="classy-list-desc"><?php echo $oeuvre->auteur; ?></span>
           </a>
         </li>
-        <li>
-          <a href="#" class="classy-list-item">
-            <span class="classy-list-title">Papineau et Nelson : blanc et noir... et la lumière fut faite</span>
-            <span class="classy-list-desc">Louis-Antoine Dessaulles</span>
-          </a>
-        </li>
+        <?php endforeach ?>
       </ul>
+      <?php endif ?>
     </div>
 
     <div class="footer-outer">
