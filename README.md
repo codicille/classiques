@@ -11,6 +11,18 @@ des modifications sont apportées à ce dépôt github.
 
     php -S localhost:8000
 
+## Feuilles de style
+
+Ce site web utilise [SASS](http://sass-lang.com/) en tant que préprocesseur pour les feuilles de style.
+
+Afin d'utiliser SASS en local sur votre machine de développement vous devez commencer par installer le gem sass.
+
+    gem install sass
+
+Pour débuter l'observation et la compilation en temps réel des feuilles de style, il suffit d'utiliser la commande sass watch.
+
+    sass --watch ./css
+
 ## Mise en ligne
 
 Configuration :
