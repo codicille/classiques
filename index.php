@@ -1,9 +1,21 @@
 <?php
 $bibliotheque = json_decode(file_get_contents('bibliotheque.json'));
-$oeuvre_param = isset($_GET['oeuvre']) ? $_GET['oeuvre'] : null;
+$oeuvre = null;
+
+if(isset($_GET['oeuvre'])) {
+  $nom_secure = preg_replace('/[^a-zA-Z0-9_-]/', '', $_GET['oeuvre']);
+  $chemin = "oeuvres/$nom_secure.html";
+
+  if(file_exists($chemin)) {
+    $oeuvre = $chemin;
+  } else {
+    header('HTTP/1.0 404 Not Found');
+    die;
+  }
+}
 ?>
 <!DOCTYPE html>
-  <html>
+  <html lang="fr">
   <head>
       <meta charset="utf-8">
       <title>Classiques de la littérature québécoise</title>
@@ -27,8 +39,8 @@ $oeuvre_param = isset($_GET['oeuvre']) ? $_GET['oeuvre'] : null;
     </div>
 
     <div class="main">
-      <?php if(isset($oeuvre_param)): ?>
-        <?php require "oeuvres/$oeuvre_param.html" ?>
+      <?php if($oeuvre): ?>
+        <?php require $oeuvre ?>
       <?php else: ?>
       <ul class="classy-list">
         <?php foreach($bibliotheque->oeuvres as $tag => $oeuvre): ?>
