@@ -1,4 +1,5 @@
 language: php
+script: echo 1
 php:
 - 5.5
 - 5.4
