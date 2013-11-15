@@ -1,0 +1,7 @@
+@mixin preMargin($tag, $value){
+  ul + #{$tag},
+  ol + #{$tag},
+  p + #{$tag} {
+    margin-top: $value;
+  }
+}
