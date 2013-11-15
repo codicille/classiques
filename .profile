@@ -1,2 +1,2 @@
 #!/bin/sh
-sass app/css
+bundle exec sass /app/css/styles.scss:/app/css/styles.css
