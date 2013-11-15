@@ -17,9 +17,9 @@ if(isset($_GET['oeuvre'])) {
 <!DOCTYPE html>
   <html lang="fr">
   <head>
-      <meta charset="utf-8">
-      <title>Classiques de la littérature québécoise</title>
-      <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <title>Classiques de la littérature québécoise</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <div class="header-outer">
