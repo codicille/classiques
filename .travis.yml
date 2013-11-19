@@ -10,3 +10,6 @@ deploy:
   app:
     master: classiques-staging
     production: classiques
+  on:
+    branch: master
+    php: 5.4
