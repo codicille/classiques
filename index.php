@@ -52,12 +52,30 @@ if(isset($_GET['lecture'])) {
           <div class="book-wrap">
             <div class="book-infos">
               <h3>Description</h3>
-              <p>Maria a dix-huit ans et vit sur une terre de colonisation au Lac Saint-Jean. Trois hommes la courtisent, trois destins s'offrent à Maria : François Paradis, Lorenzo Surprenant et Eutrope Gagnon. Le premier est un bucheron épris de liberté, le second est citadin aux États-Unis et le troisième est, comme le père de Maria, un colon. La mort de la mère de Maria, les qualités qu'on lui trouve, oriente Maria vers un rôle semblable.</p>
-              <p>On raconte que Maria a réellement existé et aurait eu comme fils Philippe Chapdelaine.</p>
-              <h4>Note sur l’édition</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-            </div>
+              <p><?php echo $oeuvre->description ?></p>
 
+              <?php if (isset($oeuvre->etudes) && is_array($oeuvre->etudes)): ?>
+                <h4>Choix d'études</h4>
+                <?php foreach($oeuvre->etudes as $etude): ?>
+                  <?php
+                    # Mise en forme du nom de l'ouvrage
+                    if(isset($etude[1])) $etude[1] = "<em>$etude[1]</em>"
+                  ?>
+                  <p><?php echo join($etude, ', ') ?></p>
+                <?php endforeach ?>
+              <?php endif ?>
+
+              <?php if (isset($oeuvre->notes_edition) && is_object($oeuvre->notes_edition)): ?>
+                <h4>Note sur l’édition</h4>
+                <?php foreach($oeuvre->notes_edition as $nom => $note): ?>
+                  <?php if (strpos($note, '/') === 0 || strpos($note, 'http') === 0): ?>
+                    <p><a target="_blank" href="<?php echo $note ?>"><?php echo $nom ?></a></p>
+                  <?php else: ?>
+                    <p><?php echo $nom ?> : <?php echo $note ?></p>
+                  <?php endif ?>
+                <?php endforeach ?>
+              <?php endif ?>
+            </div>
             <div class="book-preview">
               <img class="book-thumb" src="/oeuvres/img/<?php echo $oeuvre_param ?>.jpg">
               <a class="flat-btn-preview" href="?lecture=<?php echo $_GET['oeuvre'] ?>">Ouvrir dans <br>la liseuse</a>
