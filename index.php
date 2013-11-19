@@ -38,7 +38,7 @@ if(isset($_GET['lecture'])) {
       <div class="header-outer">
         <header>
           <div class="top-banner">
-            <a href="/">Retour à la liste des œuvres</a>
+            <a href="/" class="back">Revenir à la liste des œuvres</a>
           </div>
           <div class="intro">
             <h1><?php echo $oeuvre->titre; ?></h1>
