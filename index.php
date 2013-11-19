@@ -48,7 +48,25 @@ if(isset($_GET['lecture'])) {
       </div>
 
       <div class="main">
-        <a href="?lecture=<?php echo $_GET['oeuvre'] ?>">Lire</a>
+        <div class="book-wrap">
+          <div class="book-infos">
+            <div class="book-infos-nav">
+              <a href="#" class="active">Description</a>
+              <a href="#">Choix d'études</a>
+              <a href="#">Informations complémentaires</a>
+            </div>
+
+            <p>Maria a dix-huit ans et vit sur une terre de colonisation au Lac Saint-Jean. Trois hommes la courtisent, trois destins s'offrent à Maria : François Paradis, Lorenzo Surprenant et Eutrope Gagnon. Le premier est un bucheron épris de liberté, le second est citadin aux États-Unis et le troisième est, comme le père de Maria, un colon. La mort de la mère de Maria, les qualités qu'on lui trouve, oriente Maria vers un rôle semblable.</p>
+            <p>On raconte que Maria a réellement existé et aurait eu comme fils Philippe Chapdelaine.</p>
+            <h3>Note sur l’édition</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+          </div>
+
+          <div class="book-preview">
+            <img class="book-thumb" src="/oeuvres/img/<?php echo $oeuvre_param ?>.jpg">
+            <a class="flat-btn-preview" href="?lecture=<?php echo $_GET['oeuvre'] ?>">Ouvrir dans la liseuse</a>
+          </div>
+        </div>
       </div>
 
       <div class="footer-outer">
