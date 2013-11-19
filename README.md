@@ -6,6 +6,16 @@
 
 ## Guide de démarrage
 
+### Gestion de la bibliothèque
+
+Pour ajouter ou modifier un livre à la bibliothèque, voir le fichier `bibliotheque.json`
+qui contient tous les métas donnés sur les oeuvres de la bibliothèque.
+
+Pour ajouter un livre, assurez-vous d'utiliser le tag déterminé dans `bibliotheque.json`
+pour mettre le ou les fichiers liés dans le dossier `oeuvres`, par exemple `/oeurvre/la-scouine.html`.
+
+### Application PHP
+
 Ce site web a été conçu afin d'être simple à mettre à jour et modifier par tout
 développeur web. Vous avez besoin de PHP 5.4+ pour partir simplement un site web
 de développement. Pour la mise en ligne, celle-ci se fait automatiquement quand
@@ -13,7 +23,7 @@ des modifications sont apportées à ce dépôt github.
 
     php -S localhost:8000
 
-## Feuilles de style
+### Feuilles de style
 
 Ce site web utilise [SASS](http://sass-lang.com/) en tant que préprocesseur pour les feuilles de style.
 
@@ -25,7 +35,7 @@ Pour débuter l'observation et la compilation en temps réel des feuilles de sty
 
     sass --watch ./css
 
-## Tests
+### Tests
 
 L'application est automatiquement testée lors d'une modification, mais vous pouvez
 installer et rouler les tests avec PHP Composer:
@@ -33,7 +43,7 @@ installer et rouler les tests avec PHP Composer:
     composer install --dev
     ./vendor/bin/phpunit ./tests
 
-## Mise en ligne
+## Mise en ligne manuelle
 
 Prérequis : https://toolbelt.heroku.com
 
