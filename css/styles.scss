@@ -22,6 +22,7 @@ body {
 @include preMargin(h1, 1.6em);
 @include preMargin(h2, 1.4em);
 @include preMargin(h3, 1.2em);
+@include preMargin(h4, 1.1em);
 
 h1 {
   color: #2c558c;
@@ -34,6 +35,16 @@ h2 {
 }
 
 h3 {
+  border-bottom: 2px solid #b2bddf;
+  margin-bottom: 0.75em;
+  padding-bottom: 0.60em;
+  color: #5e6062;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h4 {
   color: #141f41;
   font-size: 17px;
 }
@@ -279,34 +290,6 @@ footer {
   display: inline-block;
   margin-right: 10%;
   width: 60%;
-}
-
-.book-infos-nav {
-  border-bottom: 2px solid #b2bddf;
-  display: table;
-  margin-bottom: 0.75em;
-  padding-bottom: 8px;
-  width: 100%;
-
-  a {
-    display: table-cell;
-    color: #5e6062;
-    font-size: 13px;
-    font-weight: bold;
-    text-transform: uppercase;
-    white-space: nowrap;
-
-    &:hover,
-    &.active {
-      color: #3b72b8;
-    }
-
-    &:nth-child(2){
-      text-align: center;
-      width: 100%;
-    }
-    &:last-child { text-align: right; }
-  }
 }
 
 .book-preview {
