@@ -47,19 +47,21 @@ if(isset($_GET['lecture'])) {
         </header>
       </div>
 
-      <div class="main">
-        <div class="book-wrap">
-          <div class="book-infos">
-            <h3>Description</h3>
-            <p>Maria a dix-huit ans et vit sur une terre de colonisation au Lac Saint-Jean. Trois hommes la courtisent, trois destins s'offrent à Maria : François Paradis, Lorenzo Surprenant et Eutrope Gagnon. Le premier est un bucheron épris de liberté, le second est citadin aux États-Unis et le troisième est, comme le père de Maria, un colon. La mort de la mère de Maria, les qualités qu'on lui trouve, oriente Maria vers un rôle semblable.</p>
-            <p>On raconte que Maria a réellement existé et aurait eu comme fils Philippe Chapdelaine.</p>
-            <h4>Note sur l’édition</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          </div>
+      <div class="main-outer">
+        <div class="main">
+          <div class="book-wrap">
+            <div class="book-infos">
+              <h3>Description</h3>
+              <p>Maria a dix-huit ans et vit sur une terre de colonisation au Lac Saint-Jean. Trois hommes la courtisent, trois destins s'offrent à Maria : François Paradis, Lorenzo Surprenant et Eutrope Gagnon. Le premier est un bucheron épris de liberté, le second est citadin aux États-Unis et le troisième est, comme le père de Maria, un colon. La mort de la mère de Maria, les qualités qu'on lui trouve, oriente Maria vers un rôle semblable.</p>
+              <p>On raconte que Maria a réellement existé et aurait eu comme fils Philippe Chapdelaine.</p>
+              <h4>Note sur l’édition</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            </div>
 
-          <div class="book-preview">
-            <img class="book-thumb" src="/oeuvres/img/<?php echo $oeuvre_param ?>.jpg">
+            <div class="book-preview">
+              <img class="book-thumb" src="/oeuvres/img/<?php echo $oeuvre_param ?>.jpg">
               <a class="flat-btn-preview" href="?lecture=<?php echo $_GET['oeuvre'] ?>">Ouvrir dans <br>la liseuse</a>
+            </div>
           </div>
         </div>
       </div>
@@ -89,17 +91,19 @@ if(isset($_GET['lecture'])) {
         </header>
       </div>
 
-      <div class="main">
-        <ul class="classy-list">
-          <?php foreach($bibliotheque->oeuvres as $tag => $oeuvre): ?>
-          <li>
-            <a href="?oeuvre=<?php echo $tag ?>" class="classy-list-item">
-              <span class="classy-list-title"><?php echo $oeuvre->titre; ?></span>
-              <span class="classy-list-desc"><?php echo $oeuvre->auteur; ?></span>
-            </a>
-          </li>
-          <?php endforeach ?>
-        </ul>
+      <div class="main-outer">
+        <div class="main">
+          <ul class="classy-list">
+            <?php foreach($bibliotheque->oeuvres as $tag => $oeuvre): ?>
+            <li>
+              <a href="?oeuvre=<?php echo $tag ?>" class="classy-list-item">
+                <span class="classy-list-title"><?php echo $oeuvre->titre; ?></span>
+                <span class="classy-list-desc"><?php echo $oeuvre->auteur; ?></span>
+              </a>
+            </li>
+            <?php endforeach ?>
+          </ul>
+        </div>
       </div>
 
       <div class="footer-outer">

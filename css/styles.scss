@@ -12,7 +12,7 @@
 
 // base
 body {
-  background: #f9fafb;
+  background: #e7edf6;
   color: #5e6062;
   font-family: sourcesans;
   font-size: 17px;
@@ -157,6 +157,10 @@ header {
     white-space: nowrap;
     width: 20%;
   }
+}
+
+.main-outer {
+  background: #f9fafb;
 }
 
 .main {
