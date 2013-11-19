@@ -2,6 +2,8 @@
 
 > Classiques de la litérature québecoise
 
+[![Build Status](https://travis-ci.org/codicille/classiques.png?branch=master)](https://travis-ci.org/codicille/classiques)
+
 ## Guide de démarrage
 
 Ce site web a été conçu afin d'être simple à mettre à jour et modifier par tout
