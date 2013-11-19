@@ -23,6 +23,14 @@ Pour débuter l'observation et la compilation en temps réel des feuilles de sty
 
     sass --watch ./css
 
+## Tests
+
+L'application est automatiquement testée lors d'une modification, mais vous pouvez
+installer et rouler les tests avec PHP Composer:
+
+    composer install --dev
+    ./vendor/bin/phpunit ./tests
+
 ## Mise en ligne
 
 Prérequis : https://toolbelt.heroku.com
