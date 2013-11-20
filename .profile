@@ -1,2 +1,2 @@
 #!/bin/sh
-sass /app/www/css/styles.scss:/app/www/css/styles.css
+sass /app/css/styles.scss:/app/css/styles.css
