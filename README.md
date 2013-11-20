@@ -8,10 +8,10 @@
 
 ### Gestion de la bibliothèque
 
-Pour ajouter ou modifier un oeuvre à la bibliothèque des classiques, utilisez le
+Pour ajouter ou modifier un oeuvre de la bibliothèque des classiques, utilisez le
 fichier [bibliotheque.json][biblio].
 
-Lors que vous ajoutez une oeuvre, ajoutez aussi le fichier source HTML pour la liseuse dans 
+Lorsque vous ajoutez une oeuvre, ajoutez aussi le fichier source HTML pour la liseuse dans 
 le dossier [oeuvres][oeuvres] avec le tag correspondant (exemple: `oeuvres/la-scouine.html`).
 
 ### Application PHP
