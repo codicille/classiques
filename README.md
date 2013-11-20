@@ -8,11 +8,11 @@
 
 ### Gestion de la bibliothèque
 
-Pour ajouter ou modifier un livre à la bibliothèque, voir le fichier `bibliotheque.json`
-qui contient tous les métas donnés sur les oeuvres de la bibliothèque.
+Pour ajouter ou modifier un oeuvre à la bibliothèque des classiques, utilisez le
+fichier [bibliotheque.json][biblio].
 
-Pour ajouter un livre, assurez-vous d'utiliser le tag déterminé dans `bibliotheque.json`
-pour mettre le ou les fichiers liés dans le dossier `oeuvres`, par exemple `/oeurvre/la-scouine.html`.
+Lors que vous ajoutez une oeuvre, ajoutez aussi le fichier source HTML pour la liseuse dans 
+le dossier [oeuvres][oeuvres] avec le tag correspondant (exemple: `oeuvres/la-scouine.html`).
 
 ### Application PHP
 
@@ -72,3 +72,6 @@ Département des littératures, Université Laval, Hookt Studios, Heliom
 et tous les autres contributeurs.
 
 Les contributions sont bienvenues, veuillez toutefois d'abord consulter le [guide de contribution](CONTRIBUTING.md).
+
+[biblio]: bibliotheque.json
+[oeuvres]: oeuvres/
