@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteRule ^oeuvres/([^/]+)\/$ oeuvre.php?oeuvre=$1 [L]
+RewriteRule ^lecture/([^/]+)\/$ lecture.php?oeuvre=$1 [L]

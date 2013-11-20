@@ -1,8 +1,8 @@
 <?php require_once('includes/config.php'); ?>
 <?php
 $lecture = null;
-if(isset($_GET['lecture'])) {
-  $nom_secure = preg_replace('/[^a-zA-Z0-9_-]/', '', $_GET['lecture']);
+if(isset($_GET['oeuvre'])) {
+  $nom_secure = preg_replace('/[^a-zA-Z0-9_-]/', '', $_GET['oeuvre']);
   $chemin = "oeuvres/$nom_secure.html";
 
   if(file_exists($chemin)) {

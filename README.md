@@ -21,7 +21,7 @@ développeur web. Vous avez besoin de PHP 5.4+ pour partir simplement un site we
 de développement. Pour la mise en ligne, celle-ci se fait automatiquement quand
 des modifications sont apportées à ce dépôt github.
 
-    php -S localhost:8000
+    php -S localhost:8000 router.php
 
 ### Feuilles de style
 

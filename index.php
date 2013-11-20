@@ -24,7 +24,7 @@
         <ul class="classy-list">
           <?php foreach($bibliotheque->oeuvres as $tag => $oeuvre): ?>
           <li>
-            <a href="oeuvre.php?oeuvre=<?php echo $tag ?>" class="classy-list-item">
+            <a href="/oeuvre/<?php echo $tag ?>" class="classy-list-item">
               <span class="classy-list-title"><?php echo $oeuvre->titre; ?></span>
               <span class="classy-list-desc"><?php echo $oeuvre->auteur; ?></span>
             </a>
