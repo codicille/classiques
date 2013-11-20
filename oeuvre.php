@@ -31,6 +31,7 @@ if(isset($_GET['oeuvre'])) {
       <div class="main">
         <div class="book-wrap">
           <div class="book-infos">
+            <a class="flat-btn-preview heading" href="/lecture/<?php echo $_GET['oeuvre'] ?>">Lire maintenant</a>
             <h3>Description</h3>
             <p><?php echo $oeuvre->description ?></p>
 

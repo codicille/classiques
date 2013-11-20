@@ -220,6 +220,11 @@ footer {
     right: 1.6em;
     top: 50%;
   }
+
+  &.heading {
+    display: none;
+    margin-bottom: 1.5em;
+  }
 }
 
 .plain {
@@ -322,4 +327,19 @@ footer {
   border: 1px solid #fff;
   box-shadow: 1px 2px 4px #6680a2;
   margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: 500px) {
+  .book-infos,
+  .book-preview {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .flat-btn-preview {
+    display: block !important;
+    max-width: none !important;
+  }
+
+  .book-thumb { display: none; }
 }
