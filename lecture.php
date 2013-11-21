@@ -17,7 +17,7 @@ if(isset($_GET['oeuvre'])) {
   <html lang="fr">
   <head>
     <title>Liseuse</title>
-    <link rel="stylesheet" href="../liseuse/liseuse.css">
+    <link rel="stylesheet" href="../liseuse/css/edsa.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
     <link href='//fonts.googleapis.com/css?family=PT+Serif|Source+Code+Pro|Open+Sans:400,600,700' rel='stylesheet'>
   </head>
@@ -25,7 +25,7 @@ if(isset($_GET['oeuvre'])) {
     <header>
       <div class="advanced-menu">
         <ul class="left">
-          <li><a class="library" href="javascript:"><span>Bibliothèque</span></a></li>
+          <li><a href="javascript:" class="library" data-hook="back-library"><span>Bibliothèque</span></a></li>
           <li><a class="book" href="javascript:" data-hook="toggle-summary"><span data-icon="b" class="icon-books"></span></a></li>
         </ul>
         <h1>
@@ -159,7 +159,6 @@ if(isset($_GET['oeuvre'])) {
         </div>
       </div>
     </footer>
-
     <div class="js-startup-hint startup-hint hidden">
       <div class="modal-wrap">
         <div class="modal js-modal-content">
@@ -168,7 +167,7 @@ if(isset($_GET['oeuvre'])) {
             Est-ce votre première utilisation de la liseuse?
           </p>
           <p>
-            Touchez l'écran pour accéder aux <strong>réglages</strong>, ou utilisez <span class="nowrap">l'icône <span data-icon="…" class="icon-more icon-b"></span></span> qui se cache en haut.
+            Touchez l'écran pour accéder aux <strong>réglages</strong>, ou utilisez <span class="nowrap">l'icône <span data-icon="…" class="icon-more icon-b"></span><!--<span class="settings-icon-preview">•••</span>--></span> qui se cache en haut.
           </p>
           <p>Tapez dans le quart inférieur de l'écran pour <strong>défiler d'une page.</strong></p>
           <a href="#" class="flat-button js-modal-close">OK</a>
@@ -181,6 +180,6 @@ if(isset($_GET['oeuvre'])) {
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
-    <script src="../liseuse/liseuse.js"></script>
+    <script src="../liseuse/js/edsa.js"></script>
   </body>
 </html>
