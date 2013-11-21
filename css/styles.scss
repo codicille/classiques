@@ -135,7 +135,7 @@ header {
 }
 
 a.top-banner {
-  @include transition(all, linear, 0.4s);
+  @include transition(all ease-in-out 0.4s);
   cursor: pointer;
   letter-spacing: 0.03em;
   opacity: 0.85;
@@ -407,7 +407,15 @@ footer {
   .book-thumb { display: none; }
 
   a.top-banner {
-    .site-title { white-space: normal; }
+    .site-title {
+      max-width: none !important;
+      white-space: normal;
+    }
     .back-wrap { display: none; }
+
+    .site-title,
+    .back-wrap {
+      @include transition(none);
+    }
   }
 }
