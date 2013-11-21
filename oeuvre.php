@@ -17,9 +17,10 @@ if(isset($_GET['oeuvre'])) {
   <body>
     <div class="header-outer">
       <header>
-        <div class="top-banner">
-          <a href="/" class="back">Revenir à la liste des œuvres</a>
-        </div>
+        <a href="/" class="top-banner">
+          <span class="back-wrap"><span class="back">Revenir à la liste des œuvres</span></span>
+          <span class="site-title">Classiques de la littérature québécoise</span>
+        </a>
         <div class="intro">
           <h1><?php echo $oeuvre->titre; ?></h1>
           <h2><?php echo $oeuvre->auteur; ?></h2>
