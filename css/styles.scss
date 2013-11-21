@@ -385,6 +385,10 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+  .classy-list-title {
+    padding-right: 0;
+  }
+
   .book-infos,
   .book-preview {
     margin-right: 0;
