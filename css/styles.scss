@@ -385,6 +385,10 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+  .intro {
+    .desc, .about-btn-wrap { width: 100%; }
+  }
+
   .classy-list-title {
     padding-right: 0;
   }
