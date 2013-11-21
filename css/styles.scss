@@ -405,4 +405,9 @@ footer {
   }
 
   .book-thumb { display: none; }
+
+  a.top-banner {
+    .site-title { white-space: normal; }
+    .back-wrap { display: none; }
+  }
 }
