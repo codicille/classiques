@@ -39,7 +39,7 @@ if(isset($_GET['oeuvre'])) {
             <h3>Description</h3>
             <p><?php echo $oeuvre->description ?></p>
 
-            <?php if (isset($oeuvre->etudes) && is_array($oeuvre->etudes)): ?>
+            <?php if (is_array($oeuvre->etudes)): ?>
               <h4>Choix d'études</h4>
               <?php foreach($oeuvre->etudes as $etude): ?>
                 <?php
@@ -50,7 +50,7 @@ if(isset($_GET['oeuvre'])) {
               <?php endforeach ?>
             <?php endif ?>
 
-            <?php if (isset($oeuvre->notes_edition) && is_object($oeuvre->notes_edition)): ?>
+            <?php if (is_object($oeuvre->notes_edition)): ?>
               <h4>Note sur l’édition</h4>
               <?php foreach($oeuvre->notes_edition as $nom => $note): ?>
                 <?php if (strpos($note, '/') === 0 || strpos($note, 'http') === 0): ?>
