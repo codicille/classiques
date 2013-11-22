@@ -17,8 +17,8 @@ if(isset($_GET['oeuvre'])) {
 <!DOCTYPE html>
   <html lang="fr">
   <head>
-    <title><?php echo "$oeuvre->titre - $oeuvre->auteur" ?></title>
-    <meta name="description" content="<?php echo substr($oeuvre->description, 0, strpos($oeuvre->description, ' ', 200)).'...'; ?>">
+    <title><?php echo $oeuvre->meta_titre; ?></title>
+    <meta name="description" content="<?php echo $oeuvre->meta_description; ?>">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="../liseuse/css/edsa.css">
     <link href='//fonts.googleapis.com/css?family=PT+Serif|Source+Code+Pro|Open+Sans:400,600,700' rel='stylesheet'>
