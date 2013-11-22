@@ -26,12 +26,48 @@
     "maria-chapdelaine": {
       "titre": "Maria Chapdelaine",
       "auteur": "Louis Hémon",
-      "description":"À venir"
+      "description": "La question s'est longtemps posée à savoir si la Scouine est un « roman de la terre ». Roman du terroir; il l'est assurément, en ce sens qu'il décrit les mœurs de paysans, leurs coutumes, qu'il offre une image, une atmosphère terrienne. En plus de décrire les activités propres aux agriculteurs, il évoque à reprises diverses coutumes de la campagne : l'homme engagé, la boutique de forge, le magasin général, le bureau de poste, le pain de ménage, la bénédiction paternelle, la Saint-Michel, les réveillons, les jeux... Mais roman de la terre au sens où la Terre devient le personnage principal et où l'auteur prône l'agriculture comme mode de vie et moyen de survie, c'est plus contestable. Cela nous ramène à la dédicace du roman, où Laberge semble, avec ironie et un peu de pitié, souhaiter « bon courage ! » à son frère. On pourrait aller jusqu'à prétendre que, en raison du parti pris du romancier de noircir êtres et choses, de ravaler les « habitants » au rang d'« exploités de la glèbe », nous nous trouvons en somme devant un anti-roman de la terre. Brunet soutient que si Laberge « médit beaucoup de la terre, cela ressemble étrangement à une querelle de famille ». La biographie détaillée présentée par le critique entend confirmer le caractère autobiographique du roman.",
+      "etudes": [
+        ["Gérard Bessette", "Albert Laberge, sa vie et son œuvre", "Ottawa",
+          "Éditions de l'Université d'Ottawa", "1969", "176 p."],
+        ["Gabrielle Pascal", "Le défi d'Albert Laberge", "Montréal",
+          "Éditions Aquila", "[1976]", "93 p."],
+        ["Mireille Servais-Maquoi", "Le roman de la terre au Québec", "Québec",
+          "Presses de l’Université Lava", "1974", "p. 99-125."],
+        ["Gérard Tougas", "Histoire de la littérature canadienne-française", "Paris",
+          "Presses universitaires de France", "1964", "p. 133-137."],
+        ["Pour une liste plus détaillée des travaux sur cette œuvre, consulter Cet Ouvrage, « thèse de doctorat portant sur le sujet », Département d’études littéraires, Université Exemple, 1990, f. 148-190."]
+      ],
+      "notes_edition": {
+        "Date de parution": "1918",
+        "Texte de référence": "Édition critique établie par Paul Wyczynski, publiée dans la « Bibliothèque du Nouveau Monde » (Presses de l’Université de Montréal, 1986) ; édition originale: Montréal, Imprimerie Modèle.",
+        "Établissement du texte": "Des corrections typographiques ont été apportées au texte, en fonction des règles suivantes. L’usage des points-virgules a été révisé pour le moderniser. Les anglicismes couramment utilisés à l’époque ont été conservés.",
+        "Accès au texte en version XML-TEI": "/oeuvres/la-scouine.xml",
+        "Accès à la version originale (version numérique, BAnQ)": "http://google.com"
+      }
     },
     "moeurs-des-sauvages-americains": {
       "titre": "Moeurs des sauvages américains",
       "auteur": "Joseph Lafiteau",
-      "description":"À venir"
+      "description": "La question s'est longtemps posée à savoir si la Scouine est un « roman de la terre ». Roman du terroir; il l'est assurément, en ce sens qu'il décrit les mœurs de paysans, leurs coutumes, qu'il offre une image, une atmosphère terrienne. En plus de décrire les activités propres aux agriculteurs, il évoque à reprises diverses coutumes de la campagne : l'homme engagé, la boutique de forge, le magasin général, le bureau de poste, le pain de ménage, la bénédiction paternelle, la Saint-Michel, les réveillons, les jeux... Mais roman de la terre au sens où la Terre devient le personnage principal et où l'auteur prône l'agriculture comme mode de vie et moyen de survie, c'est plus contestable. Cela nous ramène à la dédicace du roman, où Laberge semble, avec ironie et un peu de pitié, souhaiter « bon courage ! » à son frère. On pourrait aller jusqu'à prétendre que, en raison du parti pris du romancier de noircir êtres et choses, de ravaler les « habitants » au rang d'« exploités de la glèbe », nous nous trouvons en somme devant un anti-roman de la terre. Brunet soutient que si Laberge « médit beaucoup de la terre, cela ressemble étrangement à une querelle de famille ». La biographie détaillée présentée par le critique entend confirmer le caractère autobiographique du roman.",
+      "etudes": [
+        ["Gérard Bessette", "Albert Laberge, sa vie et son œuvre", "Ottawa",
+          "Éditions de l'Université d'Ottawa", "1969", "176 p."],
+        ["Gabrielle Pascal", "Le défi d'Albert Laberge", "Montréal",
+          "Éditions Aquila", "[1976]", "93 p."],
+        ["Mireille Servais-Maquoi", "Le roman de la terre au Québec", "Québec",
+          "Presses de l’Université Lava", "1974", "p. 99-125."],
+        ["Gérard Tougas", "Histoire de la littérature canadienne-française", "Paris",
+          "Presses universitaires de France", "1964", "p. 133-137."],
+        ["Pour une liste plus détaillée des travaux sur cette œuvre, consulter Cet Ouvrage, « thèse de doctorat portant sur le sujet », Département d’études littéraires, Université Exemple, 1990, f. 148-190."]
+      ],
+      "notes_edition": {
+        "Date de parution": "1918",
+        "Texte de référence": "Édition critique établie par Paul Wyczynski, publiée dans la « Bibliothèque du Nouveau Monde » (Presses de l’Université de Montréal, 1986) ; édition originale: Montréal, Imprimerie Modèle.",
+        "Établissement du texte": "Des corrections typographiques ont été apportées au texte, en fonction des règles suivantes. L’usage des points-virgules a été révisé pour le moderniser. Les anglicismes couramment utilisés à l’époque ont été conservés.",
+        "Accès au texte en version XML-TEI": "/oeuvres/la-scouine.xml",
+        "Accès à la version originale (version numérique, BAnQ)": "http://google.com"
+      }
     }
   }
 }
