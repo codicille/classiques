@@ -4,6 +4,8 @@ $oeuvre = null;
 if(isset($_GET['oeuvre'])) {
   $oeuvre_param = $_GET['oeuvre'];
   $oeuvre = $bibliotheque->oeuvres->{$oeuvre_param};
+  $head_titre = "$oeuvre->titre - $oeuvre->auteur";
+  $head_description = substr($oeuvre->description, 0, strpos($oeuvre->description, ' ', 200)).'...';
 
   if(!$oeuvre) {
     header('HTTP/1.0 404 Not Found');

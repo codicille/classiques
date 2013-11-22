@@ -1,7 +1,10 @@
 <?php require_once('includes/config.php'); ?>
 <!DOCTYPE html>
   <html lang="fr">
-  <?php require_once('includes/head.php') ?>
+  <?php
+  $head_description = 'Un recueil d’oeuvres québécoises avec leur contenu d’origine à lire en ligne gratuitement.';
+  require_once('includes/head.php')
+  ?>
   <body>
     <div class="header-outer">
       <header>
