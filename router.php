@@ -1,14 +1,16 @@
 <?php
-if (preg_match('/^\/($|oeuvre|lecture)\/([^\/]+)\/?/', $_SERVER["REQUEST_URI"], $matches)) {
-  # Homepage
-  if($matches[0] == '/') {
-    $module = 'index.php';
-  } else {
-    $module = $matches[1];
-    $_GET['oeuvre'] = $matches[2];
-  }
-  require("$module.php");
+if ($_SERVER["REQUEST_URI"] == '/') {
+  $module = 'index';
+} elseif (preg_match('/^\/fiche\/([^\.\/]+)\/?$/', $_SERVER["REQUEST_URI"], $matches)) {
+  $module = 'fiche';
+  $_GET['oeuvre'] = $matches[1];
+} elseif (preg_match('/^\/([^\.\/]+)\/?$/', $_SERVER["REQUEST_URI"], $matches)) {
+  $module = 'lecture';
+  $_GET['oeuvre'] = $matches[1];
 }
-else {
+
+if(!empty($module)) {
+  require("$module.php");
+} else {
   return false;
 }

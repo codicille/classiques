@@ -35,7 +35,7 @@ if(isset($_GET['oeuvre'])) {
       <div class="main">
         <div class="book-wrap">
           <div class="book-infos">
-            <a class="flat-btn-preview heading" href="/lecture/<?php echo $_GET['oeuvre'] ?>">Lire maintenant</a>
+            <a class="flat-btn-preview heading" href="/<?php echo $_GET['oeuvre'] ?>">Lire maintenant</a>
             <h3>Description</h3>
             <p><?php echo $oeuvre->description ?></p>
 
@@ -63,7 +63,7 @@ if(isset($_GET['oeuvre'])) {
           </div>
           <div class="book-preview">
             <img class="book-thumb" src="/oeuvres/img/<?php echo $oeuvre_param ?>.jpg">
-            <a class="flat-btn-preview" href="/lecture/<?php echo $_GET['oeuvre'] ?>">Lire maintenant</a>
+            <a class="flat-btn-preview" href="/<?php echo $_GET['oeuvre'] ?>">Lire maintenant</a>
           </div>
         </div>
       </div>
