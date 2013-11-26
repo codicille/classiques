@@ -13,8 +13,8 @@
         </div>
         <div class="intro">
           <p class="desc">
-            Un recueil d’oeuvres québécoises avec leur contenu d’origine, ut enim ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
+            Les Classiques de la littérature québécoise visent à rendre disponibles au grand public
+            des versions numériques validées des œuvres libres de droit du corpus littéraire québécois. </p>
           <p class="about-btn-wrap">
             <a href="/a-propos" class="flat-btn">À propos</a>
           </p>
