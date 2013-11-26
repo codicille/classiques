@@ -1,3 +1,4 @@
 RewriteEngine on
+RewriteRule ^a\-propos/?$ /a-propos.php [L]
 RewriteRule ^fiche/([^\.\/]+)\/?$ /fiche.php?oeuvre=$1 [L]
 RewriteRule ^([^\.\/]+)\/?$ /lecture.php?oeuvre=$1 [L]

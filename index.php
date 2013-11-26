@@ -16,7 +16,7 @@
             Un recueil d’oeuvres québécoises avec leur contenu d’origine, ut enim ad minim veniam, quis nostrud exercitation ullamco.
           </p>
           <p class="about-btn-wrap">
-            <a href="#" class="flat-btn">À propos</a>
+            <a href="/a-propos" class="flat-btn">À propos</a>
           </p>
         </div>
       </header>
