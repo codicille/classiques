@@ -41,14 +41,14 @@ if(isset($_GET['oeuvre'])) {
               <p><?php echo $oeuvre->description ?></p>
 
               <?php if (is_array($oeuvre->etudes)): ?>
-                <h4>Choix d'études</h4>
+                <h3>Choix d'études</h3>
                 <?php foreach($oeuvre->etudes as $etude): ?>
                   <p><?php echo join($etude, ', ') ?></p>
                 <?php endforeach ?>
               <?php endif ?>
 
               <?php if (is_object($oeuvre->notes_edition)): ?>
-                <h4>Note sur l’édition</h4>
+                <h3>Note sur l’édition</h3>
                 <?php foreach($oeuvre->notes_edition as $nom => $note): ?>
                   <?php if (strpos($note, '/') === 0 || strpos($note, 'http') === 0): ?>
                     <p><a target="_blank" href="<?php echo $note ?>"><?php echo $nom ?></a></p>
