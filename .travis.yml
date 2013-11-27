@@ -9,8 +9,7 @@ deploy:
   api_key:
     secure: Dcv8fTlkWYSUMufGWQRbY/0lGMcdUTyjO24Oqet4Or9fmy7yMqO+U1C90sTTJU96JGBkUKY9A6I2CZiSh5x+PKbYNTrKrvepfqfqoItveAKcHPEtgqg0glxSxtbUSR9Q6iHluJZE+XMWyRlHzFCeMoOEZQkv53FrZyngqr+CDMQ=
   app:
-    master: classiques-staging
-    production: classiques
+    master: classiques
   on:
     branch: master
     php: 5.4
