@@ -10,9 +10,17 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-y: scroll;
+}
+
+html, body {
+  height: 100%;
+}
+
 // base
 body {
-  background: #e7edf6;
+  background: #f9fafb;
   color: #5e6062;
   font-family: sourcesans;
   font-size: 17px;
@@ -66,6 +74,10 @@ ul, ol {
 }
 
 // layout
+.wrap {
+  min-height: 100%;
+}
+
 .inner {
   margin: 0 auto;
   max-width: 820px;
@@ -207,6 +219,7 @@ a.top-banner {
 
 .main-outer {
   background: #f9fafb;
+  padding-bottom: 80px;
 }
 
 .main {
@@ -220,6 +233,7 @@ a.top-banner {
 .footer-outer {
   @extend .outer;
   background: #e7edf6;
+  margin-top: -80px;
   padding: 18px 0 15px;
 }
 
