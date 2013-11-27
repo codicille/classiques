@@ -7,6 +7,8 @@
     <meta name="description" content="<?php echo $head_description; ?>">
   <?php endif ?>
 
+  <script src="/js/jquery.js"></script>
+  <script src="/js/tabs.js"></script>
   <!--[if lt IE 9]>
     <script src="/js/html5shiv.js"></script>
   <![endif]-->

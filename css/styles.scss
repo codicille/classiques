@@ -46,6 +46,7 @@ h3 {
   border-bottom: 2px solid #b2bddf;
   margin-bottom: 0.75em;
   padding-bottom: 0.60em;
+  padding-top: 0.60em;
   color: #5e6062;
   font-size: 13px;
   font-weight: bold;
@@ -364,11 +365,42 @@ footer {
   @extend .extra-inner, .cols-wrap;
 }
 
+.book-infos-tabs {
+  border-bottom: 2px solid #b2bddf;
+  display: table;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 1.25em;
+  margin-top: -0.60em;
+  text-transform: uppercase;
+  width: 100%;
+
+  a {
+    color: #5e6062;
+    display: table-cell;
+    padding: 0.60em 0;
+    white-space: nowrap;
+
+    &:hover { color: lighten(#5e6062, 15) }
+    &.active { color: #3b72b8; }
+
+    &:nth-child(2) {
+      text-align: center;
+      width: 75%;
+    }
+  }
+}
+
 .book-infos {
   @extend .col;
   display: inline-block;
   margin-right: 10%;
   width: 60%;
+
+  h3 {
+    position: absolute;
+    left: -9999em;
+  }
 }
 
 .book-preview {
@@ -398,12 +430,31 @@ footer {
   margin-bottom: 1.5em;
 }
 
+// misc utils
+.hidden {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   .top-banner {
     h1 { font-size: 21px; }
     h1:before { font-size: 17px; }
   }
+
+  .book-infos-tabs {
+    display: none;
+  }
+
+  .book-infos h3 {
+    position: relative;
+    left: 0;
+  }
+
+  .book-infos .tabs-content.hidden {
+    display: block;
+  }
 }
+
 @media screen and (max-width: 500px) {
   .intro {
     .desc, .about-btn-wrap { width: 100%; }

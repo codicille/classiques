@@ -35,27 +35,40 @@ if(isset($_GET['oeuvre'])) {
       <div class="main-outer">
         <div class="main">
           <div class="book-wrap">
-            <div class="book-infos">
+            <div class="book-infos js-tabs-wrap">
               <a class="flat-btn-preview heading" href="/<?php echo $_GET['oeuvre'] ?>">Lire maintenant</a>
-              <h3>Description</h3>
-              <p><?php echo $oeuvre->description ?></p>
+
+              <div class="book-infos-tabs js-tabs">
+                <a href="#description" class="active">Description</a>
+                <a href="#choix-etudes">Choix d'études</a>
+                <a href="#notes-edition">Note sur l’édition</a>
+              </div>
+
+              <div class="tabs-content js-tabs-content">
+                <h3 id="description">Description</h3>
+                <p><?php echo $oeuvre->description ?></p>
+              </div>
 
               <?php if (is_array($oeuvre->etudes)): ?>
-                <h3>Choix d'études</h3>
-                <?php foreach($oeuvre->etudes as $etude): ?>
-                  <p><?php echo join($etude, ', ') ?></p>
-                <?php endforeach ?>
+                <div class="tabs-content js-tabs-content">
+                  <h3 id="choix-etudes">Choix d'études</h3>
+                  <?php foreach($oeuvre->etudes as $etude): ?>
+                    <p><?php echo join($etude, ', ') ?></p>
+                  <?php endforeach ?>
+                </div>
               <?php endif ?>
 
               <?php if (is_object($oeuvre->notes_edition)): ?>
-                <h3>Note sur l’édition</h3>
-                <?php foreach($oeuvre->notes_edition as $nom => $note): ?>
-                  <?php if (strpos($note, '/') === 0 || strpos($note, 'http') === 0): ?>
-                    <p><a target="_blank" href="<?php echo $note ?>"><?php echo $nom ?></a></p>
-                  <?php else: ?>
-                    <p><?php echo $nom ?> : <?php echo $note ?></p>
-                  <?php endif ?>
-                <?php endforeach ?>
+                <div class="tabs-content js-tabs-content">
+                  <h3 id="notes-edition">Note sur l’édition</h3>
+                  <?php foreach($oeuvre->notes_edition as $nom => $note): ?>
+                    <?php if (strpos($note, '/') === 0 || strpos($note, 'http') === 0): ?>
+                      <p><a target="_blank" href="<?php echo $note ?>"><?php echo $nom ?></a></p>
+                    <?php else: ?>
+                      <p><?php echo $nom ?> : <?php echo $note ?></p>
+                    <?php endif ?>
+                  <?php endforeach ?>
+                </div>
               <?php endif ?>
             </div>
             <div class="book-preview">
