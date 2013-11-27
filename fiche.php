@@ -43,10 +43,6 @@ if(isset($_GET['oeuvre'])) {
               <?php if (is_array($oeuvre->etudes)): ?>
                 <h4>Choix d'études</h4>
                 <?php foreach($oeuvre->etudes as $etude): ?>
-                  <?php
-                    # Mise en forme du nom de l'ouvrage
-                    if(isset($etude[1])) $etude[1] = "<em>$etude[1]</em>"
-                  ?>
                   <p><?php echo join($etude, ', ') ?></p>
                 <?php endforeach ?>
               <?php endif ?>
