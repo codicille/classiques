@@ -74,6 +74,7 @@ if(isset($_GET['oeuvre'])) {
             <div class="book-preview">
               <img class="book-thumb" src="/oeuvres/img/<?php echo $oeuvre_param ?>.jpg">
               <a class="flat-btn-preview" href="/<?php echo $_GET['oeuvre'] ?>">Lire maintenant</a>
+            </div>
           </div>
         </div>
       </div>
