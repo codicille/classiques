@@ -124,7 +124,7 @@ header {
     @extend .site-title;
     -webkit-font-smoothing: antialiased;
     color: #fff;
-    font-size: 21px;
+    font-size: 25px;
     margin-bottom: 0;
   }
 }
@@ -139,7 +139,7 @@ header {
     -webkit-font-smoothing: antialiased;
     content: "\269e";
     font-family: icons;
-    font-size: 17px;
+    font-size: 21px;
 
     position: absolute;
     left: -0.1em;
@@ -150,7 +150,6 @@ header {
 a.top-banner {
   @include transition(all ease-in-out 0.4s);
   cursor: pointer;
-  letter-spacing: 0.03em;
   opacity: 0.85;
 
   &:hover {
@@ -399,6 +398,12 @@ footer {
   margin-bottom: 1.5em;
 }
 
+@media screen and (max-width: 600px) {
+  .top-banner {
+    h1 { font-size: 21px; }
+    h1:before { font-size: 17px; }
+  }
+}
 @media screen and (max-width: 500px) {
   .intro {
     .desc, .about-btn-wrap { width: 100%; }
