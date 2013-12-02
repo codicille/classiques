@@ -184,7 +184,9 @@ if(isset($_GET['oeuvre'])) {
     <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
     <script src="../liseuse/js/edsa.js"></script>
     <script>
-      var EDSA = new EDSA();
+      var EDSA = new EDSA({
+        backButtonUrl: '/fiche/<?php echo $oeuvre_param; ?>'
+      });
       EDSA.init();
     </script>
   </body>
